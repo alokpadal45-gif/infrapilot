@@ -12,7 +12,7 @@ leaked_memory = []  # grows in "leak" mode
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "mode": state["mode"]}
+    return {"status": "fine", "mode": state["mode"]}
 
 
 @app.get("/checkout")
